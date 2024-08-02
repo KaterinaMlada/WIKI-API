@@ -27,6 +27,7 @@ curl -H "Accept-Language: cs" -w ", %{http_code}\n" http://localhost:8000/wiki/P
 
 
 When you click on the link, it will take you to a page that will display the wanted information in Czech language.
+The curl command retrieves JSON data from the specified URL and outputs it to the terminal.
 
 ## Testing
 
