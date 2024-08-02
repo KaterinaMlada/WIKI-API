@@ -6,19 +6,13 @@
 2. Install dependencies:
   
     pip install -r requirements.txt
-   
 
-3. Run migrations:
-    
-    python manage.py migrate
-    
-
-4. Run the server:
+3. Run the server:
    
     python manage.py runserver
  
 
-5. Use the API endpoint:
+4. Use the API endpoint:
     
 
 example: 
