@@ -23,14 +23,18 @@ curl -H "Accept-Language: cs" -w ", %{http_code}\n" http://localhost:8000/wiki/r
 
 curl -H "Accept-Language: cs" -w ", %{http_code}\n" http://localhost:8000/wiki/rum/
 
-curl -H "Accept-Language: en" -w ", %{http_code}\n" http://localhost:8000/wiki/Pathofexile/
+curl -H "Accept-Language: cs" -w ", %{http_code}\n" http://localhost:8000/wiki/Path_of_Exile/
 
-curl -H "Accept-Language: ru" -w ", %{http_code}\n" http://localhost:8000/wiki/rusko/
+
+When you click on the link, it will take you to a page that will display the wanted information in Czech language.
 
 ## Testing
 
 To run tests, use:
 
 python manage.py test
+
+
+
 
 

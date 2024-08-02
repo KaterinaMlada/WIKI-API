@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    <div class="container">
+        {% if result %}
+            <h1>{{ title }}</h1>
+            <div class="article-content">
+                <p>{{ result|safe }}</p>
+            </div>
+        {% elif articles %}
+            <h1>Search Results for: {{ title }}</h1>
+            <div class="search-results">
+                <ul>
+                    {% for article in articles %}
+                        <li><a href="{% url 'get_article' article.name %}">{{ article.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            <h1>Not Found</h1>
+            <p>No article or search results found.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
